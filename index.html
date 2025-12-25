@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>christmas</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color: #f9e3e3;
+            font-family: 'Arial', sans-serif;
+            flex-direction: column;
+        }
+        .container{
+            text-align: center;
+        }
+        h1{
+            /*color: red;*/
+            font-size: 2.5em;
+            color: #d32f2f;
+
+        }
+        h2{
+            color: black;
+        }
+        .buttons{
+            margin-top: 20px;
+            
+        }
+        .yes{
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        .no{
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media(max-width: 424px){
+            h1{
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MERRY CHRISTMAS</h1>
+        <h2>Do you want gifts?</h2>
+        <div class="buttons">
+            <a href="yespage.html"><button class="yes">Yessss</button></a>
+            <a href="nopage.html"><button class="no" onclick="log()">Nooo</button></a>
+        </div>
+        <div class="gif">
+            <img src="https://media.tenor.com/Muy5iqWr9lYAAAAi/santa-claus-santa.gif">
+        </div>
+    </div>
+
+    <script>
+        // var arr=[
+        //     "Are you sure?",
+        //     "Really sure??",
+        //     "Are you positive?",
+        //    "Pookie please...",
+        //     "Just think about it!",
+        //     "If you say no, I will be really sad...",
+        //     "I will be very sad...",
+        //     "I will be very very very sad...",
+        //     "Ok fine, I will stop asking...",
+        //     "Just kidding, say yes please! ❤"
+
+        // ]
+        // var message=0;
+
+        // function log(){
+        //        const no=document.querySelector('.no');
+        //        no.textContent=arr[message];
+        //        message=(message +1)%arr.length;
+
+        //         const currentSize = parseFloat(window.getComputedStyle(yes).fontSize);
+        //         yes.style.fontSize = ${currentSize * 1.5}px;
+
+
+        // }
+
+    
+
+
+    </script>
+</body>
+</html>

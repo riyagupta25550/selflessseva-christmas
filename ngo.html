@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			height: 100vh;
+			width: 100%;
+			background-color: #f9e3e3;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Arial', sans-serif;;
+		}
+		.container{
+			text-align: center;
+		}
+		h1{
+			font-size: 3em;
+			color: #d32f2f;
+		}
+		
+		.gif button{
+			position: relative;
+			left: -35px;
+			top: -20px;
+		}
+		@media(max-width: 424px){
+            h1{
+                font-size: 1.8em;
+                position: relative;
+                /*top: 60px;*/
+            }
+
+        }
+        @media(max-width: 364px){
+           
+            .gif button{
+			position: relative;
+			left: 140px;
+			top: -35px;
+
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+		<h1>Them!!</h1>
+		<div class="gif">
+			<video id="myVideo" height="600px" autoplay muted loop playsinline>
+				<source src="vid1.mp4" type="video/mp4">
+			</video>
+		<button onclick="enableSound()">🔊</button>
+
+		</div>
+	</div>
+
+<script>
+  const video = document.getElementById("myVideo");
+
+  function enableSound() {
+    video.muted = false;
+    video.volume = 1.0;
+    video.play();
+  }
+</script>
+</body>
+</html>
